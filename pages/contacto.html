@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Red+Hat+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Revista Serviobras</title>
+</head>
+
+<body>
+    <header class="header">
+        <!--Logo-->
+        <a class="img-size" href="../index.html" target="_self"><img src="../assets/so_white.svg" width="250px"
+                alt="Logo Serviobras"></a>
+
+        <!--Menu-->
+        <ul>
+            <li><a href="../index.html" target="_self">Ir a inicio</a></li>
+            <li><a href="./nosotros.html" target="_self">Nosotros</a></li>
+            <li><a href="./novedades.html" target="_self">Novedades</a></li>
+            <li><a href="./tienda.html" target="_self">Tienda</a></li>
+            <li><a href="./contacto.html" target="_self">Contacto</a></li>
+        </ul>
+    </header>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../assets/header1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../assets/header2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../assets/header3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <main class="main">
+        <!--<img src="../assets/header1.jpg" width="100%" alt="Foto header">
+        <div class="contacto-box">
+            <h2>Dejanos tus comentarios</h2>
+            <form action="404.html" method="post" enctype="">
+                <input type="text" placeholder="Nombre y apellido" required>
+                <input type="password" placeholder="Contraseña" required>
+                <input type="email" placeholder="Ingrese su e-mail" required>
+                <textarea name="" id="Ingrese un comentario" cols="50" rows="20"></textarea>
+                <input type="reset">
+                <input type="submit">
+            </form>
+        </div>-->
+    </main>
+    <section class="form">
+        <h1>Contactate con nosotros</h1>
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <!--<select class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>-->
+            <button type="submit" class="btn boton">Submit</button>
+        </form>
+    </section>
+    <iframe class="iframe-map"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13148.118863074014!2d-58.520116349999995!3d-34.527475100000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1694896508440!5m2!1ses-419!2sar"
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    <!--Footer-->
+    <footer class="footer">
+        <img class="img-size" src="../assets/so_white.svg" width="200px" alt="Logo Serviobras">
+        <p class="font-color-blanco font-size-footer">Todos los derechos reservados © 2023</p>
+    </footer>
+    <script> src= "../scripts/bootstrap.bundle.min"</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
