@@ -574,6 +574,7 @@ input:focus {
         grid-area: nav;
         padding: 20px;
         margin: 0px;
+        color: #323e48;
     }
 
     .section-1 {
