@@ -81,10 +81,9 @@ ul {
     height: 100px;
     width: 100%;
     overflow: visible;
-    position: relative;
     z-index: 1;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     align-items: center;
     flex-wrap: wrap;
     grid-area: header;
@@ -108,12 +107,10 @@ ul {
     margin: 20px 0px 0px 0px;
 }
 
-
-
 .main {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     grid-area: main;
 }
@@ -159,7 +156,6 @@ ul {
 .footer {
     background-color: #323e48;
     height: 150px;
-    margin: 20px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -174,13 +170,14 @@ ul {
 }
 
 .form {
+    font-family: 'Montserrat', sans-serif;
     width: 800px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px 0px 20px 0px;
+    margin: 50px 0px 50px 0px;
 
 }
 
@@ -189,18 +186,15 @@ ul {
     color: #ffffff;
 }
 
+
 .boton:hover {
-    border-color: solid 2px #ff0000;
+    border: 1px solid #ff0000;
 }
 
-header {
-    background-color: #ff0000;
 
-}
 
 main {
     background-color: #ffffff;
-
 }
 
 footer {
