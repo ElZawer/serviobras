@@ -1,0 +1,101 @@
+.grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.3fr auto 0.5fr;
+    grid-template-rows: 80px 1fr 1fr 1fr 1fr 100px;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "slider slider slider"
+        "nav section-1 aside"
+        "nav section-2 aside"
+        "footer footer footer"
+    ;
+    grid-gap: 10px;
+
+}
+
+.header {
+    background-color: #ff0000;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-area: header;
+}
+
+.slider {
+    background-color: #323e48;
+    grid-area: slider;
+}
+
+.nav {
+    background-color: #777777;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    grid-area: nav;
+    padding: 20px 20px 20px 20px;
+    margin: 20px 0px 0px 0px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    grid-area: main;
+}
+
+.section-1 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-area: section-1;
+}
+
+.section-2 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-area: section-2;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: aside;
+    margin: 20px 0px 20px 0px;
+}
+
+.banner {
+    display: flex;
+    margin: 0px 0px 20px 0px;
+}
+
+.productos-box {
+    height: auto;
+    width: 300px;
+    margin: 20px 20px 20px 20px;
+    padding: 25px;
+    border-radius: 5px;
+    overflow: visible;
+    display: inline-block;
+    position: relative;
+    box-shadow: 0px 0px 15px #bfc2c4;
+}
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 150px;
+}

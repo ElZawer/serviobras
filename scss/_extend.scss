@@ -1,0 +1,10 @@
+.boton {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color: map-get($colores, color-primario);
+    color: #ffffff;
+    &:hover {
+        border: 1px solid map-get($colores, color-primario);
+        transform: scale(110%);
+    }
+}

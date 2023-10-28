@@ -68,12 +68,12 @@ p {
 
 ul {
     list-style: none;
+    li {
+        display: inline-block;
+        margin: 20px 20px 0px 0px;
+    }
 }
 
-ul li {
-    display: inline-block;
-    margin: 20px 20px 0px 0px;
-}
 
 /* Estilos Index */
 .main__secciones {
@@ -100,9 +100,6 @@ ul li {
     padding: 20px 20px 50px 20px;
 }
 
-.main__secciones--foto:hover {
-    
-}
 
 .main__secciones--flecha {
     padding: 0px 20px 50px 20px;
