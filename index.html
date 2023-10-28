@@ -23,7 +23,7 @@
     <header class="header">
         <!--Logo-->
         <a href="index.html" target="_self">
-            <img class="img-size" src="./assets/so_white.svg" width="250px" alt="Logo Serviobras">
+            <img src="./assets/so_white.svg" width="250px" alt="Logo Serviobras">
         </a>
         <!--Menu-->
         <ul>
@@ -55,57 +55,90 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <main class="main">
+    <main class="main__secciones">
         <!--Titulo principal-->
-        <article>
-            <h1>TODOS LOS PROVEEDORES PARA TU OBRA ESTÁN AQUÍ​</h1>
-            <p class="font-margin-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptatum a libero
-                temporibus? Repudiandae veniam fugit quae? Natus, illo nobis. Est eum quaerat doloremque placeat nostrum
-                at repellendus fugiat perspiciatis?
-                Vitae, adipisci. Harum sit reiciendis eaque ducimus veniam, atque rerum itaque provident illum neque
-                molestias nulla illo ea ipsa blanditiis voluptas possimus dolor! Excepturi ea, eveniet nostrum commodi
-                natus ipsam.
-                Vel ipsa architecto aut, tenetur totam quis, distinctio nihil neque saepe deleniti minus maxime
-                cupiditate esse ea harum alias corporis dolor adipisci? Quae voluptate harum exercitationem, aperiam
-                quos omnis quas?
-                Odit qui rerum illo dolor, amet, maiores sapiente quod debitis iusto quas enim eligendi pariatur.</p>
+        <article class="main__secciones--texto">
+            <h1 class="font-size-56 text-align-center">TODOS LOS PROVEEDORES PARA TU OBRA ESTÁN AQUÍ​</h1>
         </article>
     </main>
-
-    <!--Seccion novedades-->
-    <section class="section">
-        <article class="section-card-box">
-            <img src="./assets/news1.jpg" alt="Foto baldosas decorativas">
-            <h2>BALDOSAS ACRÍLICAS DECORATIVAS PARA TU OBRA</h2>
-            <p>Un nuevo tipo de material de construcción de acabado es una baldosa sensible con fibra acrílica
-                que reacciona a tus movimientos, al tacto o a las fuentes de luz. La fibra óptica transmite luz
-                y reacciona: la baldosa puede centellear, iluminarse, captar y dispersar colores vecinos en su
-                superficie. Decorar con este material ofrece nuevas oportunidades en arquitectura y diseño de
-                interiores.</p>
-        </article>
-        <article class="section-card-box">
-            <img src="./assets/news2.jpg" alt="Foto IA Asi ha cambiado la arquitectura">
-            <h2>IA: ASÍ HA CAMBIADO A LA ARQUITECTURA Y EL DISEÑO</h2>
-            <p>Poco después de la pandemia, SPACE10, un laboratorio de investigación y diseño que se unió con
-                IKEA para escapar y resolver problemas del hogar durante la época de confinamiento. Fue así que
-                ambas firmas lanzaron experimentos digitales en su plataforma de experimentación
-                EverydayExperiments.com. Desde la meditación y la naturaleza hasta la comida y el juego, estos
-                experimentos permiten nuevas formas de sentir. Lorem ipsum dolor, sit amet consectetur
-                adipisicing elit.
-            </p>
-        </article>
-        <article class="section-card-box">
-            <img src="./assets/news3.jpg" alt="Foto tendencias de color 2023">
-            <h2>ESTAS SON LAS TENDECIAS DE COLOR PARA 2023 EN DISEÑO</h2>
-            <p>Colores que atraen la calma, la naturaleza y la vivacidad, son algunas de las tendencias de color
-                que veremos en 2023, después de un largo periodo de pandemia alrededor del mundo. Ya sea en
-                diseño, interiorismo, arquitectura o moda, estos colores se relacionan con la renovación, como
-                los tonos neutrales como el crema o beige, los pasteles y la gama de azules y verdes claros.
-                Conocelos todos en este informe.</p>
-        </article>
-
-    </section>
-
+    <main>
+        <!--Seccion novedades-->
+        <section class="main__secciones">
+            <article class="main__secciones--botones">
+                <img class="main__secciones--flecha animacion" src="./assets/flecha2.png" alt="Foto baldosas decorativas">
+                <img class="main__secciones--foto" src="./assets/bt1.jpg" alt="Foto baldosas decorativas">
+            </article>
+            <article class="main__secciones--botones">
+                <img class="main__secciones--flecha animacion" src="./assets/flecha2.png" alt="Foto baldosas decorativas">
+                <img class="main__secciones--foto" src="./assets/bt2.jpg" alt="Foto IA Asi ha cambiado la arquitectura">
+            </article>
+            <article class="main__secciones--botones">
+                <img class="main__secciones--flecha animacion" src="./assets/flecha2.png" alt="Foto baldosas decorativas">
+                <a href="./pages/tienda.html" target="_self"><img class="main__secciones--foto" src="./assets/bt3.jpg" alt="Foto tendencias de color 2023"></a>
+            </article>
+        </section>
+    </main>
+    <main class="main__clientes">
+        <section>
+            <h2 class="home__clientes--titulo text-align-center">Estos clientes confían en Revista Serviobras</h2>
+        </section>
+        <section class="main__clientes">
+            <div class="home__clientes--logos">
+                <img src="./assets/clientes1.png" width="250px" alt="Foto staff 1">
+            </div>
+            <div class="home__clientes--logos">
+                <img src="./assets/clientes2.png" width="250px" alt="Foto staff 1">
+            </div>
+            <div class="home__clientes--logos">
+                <img src="./assets/clientes3.png" width="250px" alt="Foto staff 1">
+            </div>
+            <div class="home__clientes--logos">
+                <img src="./assets/clientes4.png" width="250px" alt="Foto staff 1">
+            </div>
+            <div class="home__clientes--logos">
+                <img src="./assets/clientes5.png" width="250px" alt="Foto staff 1">
+            </div>
+        </section>
+    </main>
+    <main>
+        <!--Seccion novedades-->
+        <section>
+            <h2 class="home__clientes--titulo text-align-center">Novedades</h2>
+        </section>
+        <section class="main__secciones">
+            <article class="main__secciones--cards">
+                <img src="./assets/news1.jpg" alt="Foto baldosas decorativas">
+                <h2>BALDOSAS ACRÍLICAS DECORATIVAS PARA TU OBRA</h2>
+                <p>Un nuevo tipo de material de construcción de acabado es una baldosa sensible con fibra acrílica
+                    que reacciona a tus movimientos, al tacto o a las fuentes de luz. La fibra óptica transmite luz
+                    y reacciona: la baldosa puede centellear, iluminarse, captar y dispersar colores vecinos en su
+                    superficie. Decorar con este material ofrece nuevas oportunidades en arquitectura y diseño de
+                    interiores. Conocelos todos en este informe.</p>
+                <button class="btn boton">VER MÁS</button>
+            </article>
+            <article class="main__secciones--cards">
+                <img src="./assets/news2.jpg" alt="Foto IA Asi ha cambiado la arquitectura">
+                <h2>IA: ASÍ HA CAMBIADO A LA ARQUITECTURA Y EL DISEÑO</h2>
+                <p>Poco después de la pandemia, SPACE10, un laboratorio de investigación y diseño que se unió con
+                    IKEA para escapar y resolver problemas del hogar durante la época de confinamiento. Fue así que
+                    ambas firmas lanzaron experimentos digitales en su plataforma de experimentación
+                    EverydayExperiments.com. Desde la meditación y la naturaleza hasta la comida y el juego, estos
+                    experimentos permiten nuevas formas de sentir.
+                </p>
+                <button class="btn boton">VER MÁS</button>
+            </article>
+            <article class="main__secciones--cards">
+                <img src="./assets/news3.jpg" alt="Foto tendencias de color 2023">
+                <h2>ESTAS SON LAS TENDECIAS DE COLOR PARA 2023 EN DISEÑO</h2>
+                <p>Colores que atraen la calma, la naturaleza y la vivacidad, son algunas de las tendencias de color
+                    que veremos en 2023, después de un largo periodo de pandemia alrededor del mundo. Ya sea en
+                    diseño, interiorismo, arquitectura o moda, estos colores se relacionan con la renovación, como
+                    los tonos neutrales como el crema o beige, los pasteles y la gama de azules y verdes claros.
+                    Conocelos todos en este informe.</p>
+                <button class="btn boton">VER MÁS</button>
+            </article>
+        </section>
+    </main>
     <footer class="footer">
         <p><img class="img-size" src="./assets/so_white.svg" width="200px" alt="Logo Serviobras"></p>
         <p class="font-color-blanco font-size-footer">Todos los derechos reservados © 2023</p>
