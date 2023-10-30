@@ -1,25 +1,26 @@
 a {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    color: #ffffff;
+    font-family: map-get($fuentes , fuente-titulo);
+    font-size: 22px;
+    color: map-get($colores , color-blanco);
     font-weight: 700;
+    text-transform: uppercase;
     text-decoration: none;
     list-style-type: none;
 }
 
 h1 {
-    color: #ff0000;
-    font-family: 'Oswald', sans-serif;
+    color: map-get($colores , color-primario);
+    font-family: map-get($fuentes , fuente-titulo);
     font-size: 40px;
     font-weight: 700;
     text-align: left;
     text-transform: uppercase;
-    line-height: 44px;
+    line-height: 58px;
 }
 
 h2 {
-    color: #323e48;
-    font-family: 'Oswald', sans-serif;
+    color: map-get($colores, color-secundario);
+    font-family: map-get($fuentes, fuente-titulo);
     font-size: 32px;
     font-weight: 700;
     font-style: normal;
@@ -30,8 +31,8 @@ h2 {
 }
 
 h3 {
-    color: #323e48;
-    font-family: 'Oswald', sans-serif;
+    color: map-get($colores , color-secundario);
+    font-family: map-get($fuentes , fuente-titulo);
     font-size: 26px;
     font-weight: 700;
     font-style: normal;
@@ -42,8 +43,8 @@ h3 {
 }
 
 h4 {
-    color: #a2a9ad;
-    font-family: 'Montserrat', sans-serif;
+    color: map-get($colores, color-terciario);
+    font-family: map-get($fuentes, fuente-texto);
     font-size: 16px;
     font-weight: 500;
     font-style: italic;
@@ -52,8 +53,8 @@ h4 {
 }
 
 p {
-    color: #323e48;
-    font-family: 'Montserrat', sans-serif;
+    color: map-get($colores, color-secundario);
+    font-family: map-get($fuentes, fuente-texto);
     font-size: 14px;
     font-weight: 400;
     text-align: left;
@@ -73,45 +74,19 @@ ul {
     flex-direction: row;
 }
 a:hover {
-    background-color: #323e48;
-    color: #ffffff;
+    background-color: map-get($colores , color-secundario);
+    color: map-get($colores , color-blanco);
     cursor: crosshair;
     transform: scale 1s;
 }
 a:link {
-    color: #ffffff
+    color: map-get($colores , color-blanco);
 }
 
 input:focus {
-    outline: solid 2px #ff0000;
-}
-.font-color-blanco {
-    color: #ffffff;
-}
-
-.font-color-rojo {
-    color: #ff0000;
-}
-
-.font-size-56 {
-    font-size: 56px;
-}
-
-.font-size-footer12 {
-    font-size: 12px;
-}
-
-.text-align-center {
-    text-align: center;
+    outline: solid 2px map-get($colores , color-primario);
 }
 
 .text-decoration-tachado {
     text-decoration: line-through;
 }
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-

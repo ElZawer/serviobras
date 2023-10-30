@@ -1,0 +1,38 @@
+@mixin textos($font-family, $font-weight, $color, $background-color, $font-size, $text-align, $line-height, $margin) {
+font-family: $font-family;
+font-weight: $font-weight;
+color: $color;
+background-color: $background-color;
+font-size: $font-size;
+text-align: $text-align;
+line-height: $line-height;
+margin: $margin;
+}
+
+.home__novedades--titulo {
+    @include textos(Oswald, 700, $color-primario, $color-blanco, 52px, center, 58px, 50px 0 50px 0)
+}
+
+.home__secciones--titulo {
+    @include textos(Oswald, 700, $color-primario, $color-blanco, 62px, center, 66px, 70px 0 50px 0)
+}
+
+.footer__parrafo {
+    @include textos(Oswald, 400, $color-blanco, $color-secundario, 14px, center, 14px, 50px 0 50px 0)
+}
+
+.nosotros_secciones--titulo {
+    @include textos(Oswald, 700, $color-primario, $color-blanco, 44px, left, 46px, 20px 0 20px 0)
+}
+
+.nosotros_staff--nombre {
+    @include textos(Oswald, 700, $color-primario, $color-blanco, 32px, center, 36px, 20px 0 0 0)
+}
+
+.nosotros_staff--cargo {
+    @include textos(Oswald, 700, $color-negro, $color-blanco, 24px, center, 28px, 5px 0 20px 0)
+}
+
+.nosotros_staff--descripcion {
+    @include textos(Montserrat, 400, $color-negro, $color-blanco, 14px, center, 20px, 0 20px 0)
+}

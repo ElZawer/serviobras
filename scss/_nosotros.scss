@@ -1,9 +1,29 @@
-.staff-box {
+.nosotros__secciones {
     display: flex;
-    height: 100%;
-    width: 250px;
-    margin: 20px 20px 100px 20px;
-    overflow: visible;
-    display: inline-block;
-    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .nosotros__secciones--titulo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        margin: 50px;
+    }
+
+    .nosotros__secciones--card {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0 0 50px 0;
+    }
+
+    .nosotros__secciones--box {
+        height: 100%;
+        width: 250px;
+        margin: 25px;
+    }
 }

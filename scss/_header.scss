@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: $color-primario;
+    height: 110px;
+    width: 100%;
+    padding: 05px 50px 0 50px;
+    grid-area: header;
+}
+
+.header--tienda {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: $color-primario;
+    height: 100px;
+    padding: 0 50px 10px 50px;
+    grid-area: header;
+}

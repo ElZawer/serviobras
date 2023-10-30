@@ -1,29 +1,17 @@
 .grid-container {
-    height: 100vh;
     display: grid;
+    height: 100vh;
     grid-template-columns: 0.3fr auto 0.5fr;
-    grid-template-rows: 80px 1fr 1fr 1fr 1fr 100px;
+    grid-template-rows: 0100px 1fr 1fr 1fr 1fr 100px;
     grid-template-areas:
         "header header header"
         "main main main"
         "slider slider slider"
-        "nav section-1 aside"
-        "nav section-2 aside"
-        "footer footer footer"
+        "nav-1 section-1 aside"
+        "nav-1 section-2 aside"
+        "footer__tienda footer__tienda footer__tienda"
     ;
     grid-gap: 10px;
-
-}
-
-.header {
-    background-color: #ff0000;
-    height: 100px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    grid-area: header;
 }
 
 .slider {
@@ -31,25 +19,36 @@
     grid-area: slider;
 }
 
-.nav {
-    background-color: #777777;
-    overflow: visible;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    grid-area: nav;
-    padding: 20px 20px 20px 20px;
-    margin: 20px 0px 0px 0px;
-}
-
 .main {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     grid-area: main;
+}
+
+.nav-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: $color-blanco;
+    margin: 20px 0px 0px 0px;
+    grid-area: nav-1;
+
+    .partners {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    h2 {
+        color: $color-secundario;
+        font-size: 26px;
+        text-align: center;
+        line-height: 30px;
+    }
 }
 
 .section-1 {
@@ -91,11 +90,218 @@
     display: inline-block;
     position: relative;
     box-shadow: 0px 0px 15px #bfc2c4;
+
+    .precio__rebajado {
+        text-decoration: line-through;
+        font-weight: 400;
+        font-size: 24px;
+
+    }
 }
 
-.partners {
-    display: flex;
-    flex-direction: column;
-    width: 150px;
-    height: 150px;
+@media (max-width: 479px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "nav-1 nav-1"
+            "section-1 section-1"
+            "aside aside"
+            "section-2 section-2"
+            "footer__tienda footer__tienda"
+        ;
+        grid-gap: 10px;
+    }
+
+    .banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav-1 {
+        background-color: $color-blanco;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: auto;
+        grid-area: nav-1;
+    }
+
+    .section-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .partners {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: auto;
+        height: 350px;
+    }
+
+    .header--tienda {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: $color-primario;
+        height: 150px;
+        width: auto;
+        grid-area: header;
+}
+
+a {
+    font-size: 14px;
+}
+}
+
+@media (min-width: 480px) and (max-width: 576px) {
+    a {
+        font-size: 16px;
+    }
+
+    .header {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px 10px 0px;
+    }
+
+    .section-card-box {
+        background-color: #ffffff;
+        height: auto;
+        width: 360px;
+        border-radius: 5px;
+        display: inline-block;
+        margin: 20px;
+        padding: 20px;
+        box-shadow: 0px 0px 15px #bebebe;
+
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "nav-1 nav-1"
+            "section-1 section-1"
+            "aside aside"
+            "section-2 section-2"
+            "footer__tienda footer__tienda"
+        ;
+        grid-gap: 10px;
+    }
+
+    .banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav-1 {
+        background-color: $color-blanco;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        grid-area: nav-1;
+        padding: 20px;
+        margin: 0px;
+    }
+
+    .section-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__tienda {
+        margin: 20px 0px 20px 0px;
+        flex-direction: column;
+        align-items: center;
+        grid-area: footer__tienda;
+    }
+
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "nav-1 nav-1"
+            "section-1 section-1"
+            "aside aside"
+            "section-2 section-2"
+            "footer__tienda footer__tienda"
+        ;
+        grid-gap: 10px;
+    }
+
+    .banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav-1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: $color-blanco;
+        width: auto;
+        height: auto;
+
+        color: $color-secundario;
+        grid-area: nav-1;
+    }
+
+    .partners {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .section-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

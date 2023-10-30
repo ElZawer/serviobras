@@ -1,10 +1,12 @@
 $colores: (
-    color-primario: #ff0000,
-    color-secundario: #323e48,
-    color-negro: #000000,
+    color-primario: $color-primario,
+    color-secundario: $color-secundario,
+    color-terciario: $color-terciario,
+    color-negro: $color-negro,
+    color-blanco: $color-blanco,
 );
 
 $fuentes: (
     fuente-titulo: Oswald,
-    fuento-texto: Montserrat,
+    fuente-texto: Montserrat,
 );

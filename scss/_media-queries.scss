@@ -30,52 +30,7 @@
         grid-area: footer;
     }
 
-    .grid-container {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: 120px auto auto auto auto auto 150px;
-        grid-template-areas:
-            "header header"
-            "main main"
-            "nav nav"
-            "section-1 section-1"
-            "aside aside"
-            "section-2 section-2"
-            "footer footer"
-        ;
-        grid-gap: 10px;
-    }
-
-    .banner {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .nav {
-        background-color: #777777;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        grid-area: nav;
-        padding: 20px;
-        margin: 0px;
-    }
-
-    .section-1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .section-2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
+    
 }
 
 @media (max-width: 479px) {

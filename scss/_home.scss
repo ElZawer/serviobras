@@ -5,10 +5,6 @@
     flex-wrap: wrap;
     justify-content: center;
     width: auto;
-    .home__secciones--texto {
-        width: 1431px;
-        margin: 80px 20px 20px 20px;
-    }
     .home__secciones--botones {
         height: auto;
         width: 457px;
@@ -17,13 +13,16 @@
         margin: 20px;
         padding: 20px 20px 50px 20px;
         transition: all 1s;
+
         &:hover {
-            scale: 110%;      
+            scale: 110%;
         }
     }
+
     .home__secciones--flecha {
         padding: 0px 20px 50px 20px;
     }
+
     .home__secciones--foto {
         border-radius: 15px;
     }
@@ -32,25 +31,37 @@
 .home__bullets {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;   
+    justify-content: center;
+
     .home__bullets--cards {
         display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
+
     .home__bullets--texto {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
         width: 350px;
         margin: 50px 20px;
     }
+
     h2 {
         font-size: 24px;
         font-weight: 700;
         text-align: center;
-        color: $color-principal;
+        color: $color-primario;
     }
+
     p {
         font-size: 16px;
         line-height: 20px;
-        text-align: center;        
+        text-align: center;
     }
 }
 
@@ -60,13 +71,16 @@
     animation-timing-function: ease-in;
     animation-duration: 3s;
     animation-delay: 0s;
+
     @keyframes animacion-flecha {
         0% {
             translate: 0 0;
         }
+
         50% {
             translate: 0 -10px;
         }
+
         100% {
             translate: 0 0;
         }
@@ -75,20 +89,18 @@
 
 .home__novedades {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: auto;
     margin: 0px 0px 50px 0px;
-    .home__novedades--titulo {
-        height: 100px;
-        width: 100%;
-        font-size: 40px;
-        text-align: center;
-        margin: 50px 0px 0px 0px;
-    }
     .home__novedades--cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         height: auto;
         width: 457px;
         border-radius: 5px;
@@ -108,18 +120,28 @@
     width: auto;
     background-color: #e0e0e0;
     margin: 0px 0px 50px 0px;
+
     .home__clientes--titulo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        line-height: 46px;
         height: 100px;
         width: 100%;
         font-size: 40px;
         margin: 50px 0px 0px 0px;
+        text-align: center;
     }
+
     .home__clientes--logos {
         display: flex;
         height: 100%;
-        width: 250px;
-        margin: 0px 20px 20px 20px;
+        width: 200px;
+        margin: 0px 50px 10px 50px;
         transition: scale 1s;
+
         &:hover {
             scale: 110%;
         }
