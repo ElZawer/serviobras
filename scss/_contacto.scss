@@ -26,6 +26,9 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    flex-direction: center;
+    align-items: center;
+    margin: 30px;
 }
 
 @media (min-width: 320px) and (max-width: 479px) {
