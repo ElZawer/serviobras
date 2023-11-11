@@ -438,6 +438,12 @@ input:focus {
   margin-top: 50px;
 }
 
+@media (min-width: 320px) and (max-width: 479px) {
+  h2 {
+    font-size: 12px;
+    line-height: 26px;
+  }
+}
 /* Estilos Home */
 .home__secciones {
   display: flex;
@@ -572,10 +578,11 @@ input:focus {
   align-items: center;
   line-height: 46px;
   height: 100px;
-  width: 100%;
+  width: auto;
   font-size: 40px;
-  margin: 50px 0px 0px 0px;
   text-align: center;
+  font-size: 32px;
+  line-height: 34px;
 }
 .home__clientes .home__clientes--logos {
   display: flex;
@@ -589,9 +596,9 @@ input:focus {
 }
 
 @media (min-width: 320px) and (max-width: 479px) {
-  .home__secciones--titulo {
-    font-size: 42px;
-    line-height: 44px;
+  .home__clientes--titulo {
+    font-size: 22px;
+    line-height: 24px;
   }
   .home__secciones--botones {
     display: flex;
@@ -624,15 +631,15 @@ input:focus {
   }
 }
 @media (min-width: 480px) and (max-width: 576px) {
-  .home__secciones--titulo {
-    font-size: 48px;
-    line-height: 52px;
+  .home__clientes--titulo {
+    font-size: 24px;
+    line-height: 26px;
   }
 }
 @media (min-width: 577px) and (max-width: 768px) {
-  .home__secciones--titulo {
-    font-size: 56px;
-    line-height: 62px;
+  .home__clientes--titulo {
+    font-size: 28px;
+    line-height: 30px;
   }
 }
 .header {
@@ -850,6 +857,48 @@ input:focus {
   margin: 25px;
 }
 
+@media (min-width: 320px) and (max-width: 479px) {
+  h1 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .nosotros_staff--nombre {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .nosotros_staff--cargo {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+@media (min-width: 480px) and (max-width: 576px) {
+  h1 {
+    font-size: 30px;
+    line-height: 32px;
+  }
+  .nosotros_staff--nombre {
+    font-size: 26px;
+    line-height: 28px;
+  }
+  .nosotros_staff--cargo {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+    line-height: 34px;
+  }
+  .nosotros_staff--nombre {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .nosotros_staff--cargo {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
 .novedades__main {
   display: flex;
   flex-wrap: wrap;
@@ -920,7 +969,7 @@ input:focus {
     display: flex;
     flex-direction: column;
     width: 320px;
-    margin: 0;
+    margin: 20px;
     padding: 0;
     border-bottom: 3px dotted #323e48;
   }
