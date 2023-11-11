@@ -15,7 +15,7 @@ h1 {
     font-weight: 700;
     text-align: left;
     text-transform: uppercase;
-    line-height: 58px;
+    line-height: 44px;
 }
 
 h2 {
@@ -52,6 +52,16 @@ h4 {
     margin: 20px 0px 20px 0px;
 }
 
+h5 {
+    color: map-get($colores, color-terciario);
+    font-family: map-get($fuentes, fuente-titulo);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 20px 0px 20px 0px;
+}
+
 p {
     color: map-get($colores, color-secundario);
     font-family: map-get($fuentes, fuente-texto);
@@ -64,21 +74,24 @@ p {
 
 ul {
     list-style: none;
+
     li {
         display: inline-block;
         margin: 20px 20px 0px 0px;
     }
 }
+
 .menu-box {
     display: flex;
     flex-direction: row;
 }
+
 a:hover {
-    background-color: map-get($colores , color-secundario);
     color: map-get($colores , color-blanco);
     cursor: crosshair;
     transform: scale 1s;
 }
+
 a:link {
     color: map-get($colores , color-blanco);
 }
@@ -89,4 +102,21 @@ input:focus {
 
 .text-decoration-tachado {
     text-decoration: line-through;
+}
+
+.navbar-customize {
+    background-color: $color-primario;
+}
+
+.slider-customize {
+    margin-top: 50px;
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+}
+
+@media (min-width: 480px) and (max-width: 576px) {
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
 }

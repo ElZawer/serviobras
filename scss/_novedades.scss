@@ -11,10 +11,12 @@
         flex-wrap: wrap;
         flex-direction: column;
         width: 1fr;
+
         h2 {
             font-size: 32px;
             color: $color-secundario;
         }
+
         h3 {
             font-size: 24px;
             font-weight: 400;
@@ -36,6 +38,7 @@
         justify-content: center;
         align-items: baseline;
         width: auto;
+
         h1 {
             font-size: 48px;
             color: $color-primario;
@@ -69,58 +72,14 @@
     }
 
 }
-/*.novedades__main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
 
-    .novedades__columna1 {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 0.75fr;
-        height: 100%;
-    }
-
-    .novedades__columna2 {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 0.25fr;
-        height: 100%;
-    }
-
-    .novedades__secciones {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: baseline;
-        width: auto;
-    }
-
+@media (min-width: 320px) and (max-width: 479px) {
     .novedades-box {
         display: flex;
         flex-direction: column;
-        margin: 20px 20px 20px 20px;
-        padding: 20px;
+        width: 320px;
+        margin: 0;
+        padding: 0;
+        border-bottom: 3px dotted #323e48;
     }
-
-    .novedades-box--foto {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin: 0px 50px 0px 0px;
-        padding: 20px;
-    }
-
-    .novedades-box--titulo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100px;
-        width: 100%;
-        margin: 20px 0px 0px 0px;
-    }
-
-}*/
+}

@@ -16,26 +16,60 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
     <title>Tienda | Revista Serviobras</title>
 </head>
 
 <body>
     <div class="grid-container">
-        <header class="header--tienda">
-            <a href="../index.html" target="_self">
-                <img class="img-size" src="../assets/so_white.svg" width="250px" alt="Logo Serviobras">
-            </a>
-            <ul>
-                <li><a href="../index.html" target="_self">Inicio</a></li>
-                <li><a href="./nosotros.html" target="_self">Nosotros</a></li>
-                <li><a href="./novedades.html" target="_self">Novedades</a></li>
-                <li><a href="./tienda.html" target="_self">Tienda</a></li>
-                <li><a href="./contacto.html" target="_self">Contacto</a></li>
-            </ul>
-        </header>
+        <nav class="navbar navbar-dark fixed-top navbar-customize">
+            <div class="container-fluid navbar-customize">
+                <a class="navbar-brand" href="index.html" target="_self">
+                    <img class="logo" src="../assets/so_white.svg" alt="Logo Serviobras">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">¿Qué estás buscando?</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body navbar-customize">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a href="../index.html" aria-current="page" target="_self">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../pages/nosotros.html" target="_self">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../pages/novedades.html" target="_self">Novedades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../pages/tienda.html" target="_self">Tienda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../pages/contacto.html" target="_self">Contacto</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                            <button type="submit" class="boton--secundario">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
         <main class="main">
-            <a href="./tienda.html" target="_self"><img src="../assets/header2.jpg" width="100%" alt="Foto header"></a>
+            <a href="./tienda.html" target="_self"><img src="../assets/header2-1920.jpg" width="100%"
+                    alt="Foto header"></a>
         </main>
         <nav class="nav-1">
             <div>
@@ -45,30 +79,33 @@
                 <div class="partners">
                     <div>
                         <a href="https://elementalconstructora.com.ar/" target="_blank"><img
-                                src="../assets/partners1_gris.png" alt="Partners Elemental"></a>
+                                class="partners__logo--width" src="../assets/partners1_gris.png"
+                                alt="Partners Elemental"></a>
                     </div>
                     <div>
                         <a href="https://elementalconstructora.com.ar/" target="_blank"><img
-                                src="../assets/partners2_gris.png" alt="Partners Riva"></a>
+                                class="partners__logo--width" src="../assets/partners2_gris.png"
+                                alt="Partners Riva"></a>
                     </div>
                     <div>
                         <a href="https://elementalconstructora.com.ar/" target="_blank"><img
-                                src="../assets/partners3_gris.png" alt="Partners CAM"></a>
+                                class="partners__logo--width" src="../assets/partners3_gris.png" alt="Partners CAM"></a>
                     </div>
                     <div>
                         <a href="https://elementalconstructora.com.ar/" target="_blank"><img
-                                src="../assets/partners4_gris.png" alt="Partners ATV"></a>
+                                class="partners__logo--width" src="../assets/partners4_gris.png" alt="Partners ATV"></a>
                     </div>
                     <div>
                         <a href="https://elementalconstructora.com.ar/" target="_blank"><img
-                                src="../assets/partners5_gris.png" alt="Partners Orange"></a>
+                                class="partners__logo--width" src="../assets/partners5_gris.png"
+                                alt="Partners Orange"></a>
                     </div>
                 </div>
             </div>
         </nav>
         <section class="section-1">
             <article class="productos-box">
-                <img src="../assets/tienda_AireAcondicionado_Portada.jpg" width="300px" alt="Foto Aire acondicionado">
+                <img src="../assets/tienda_AireAcondicionado_Portada.jpg" width="280px" alt="Foto Aire acondicionado">
                 <h2>AIRE ACONDICIONADO SPLIT INVERTER SURREY</h2>
                 <p>Aire Acondicionado Split Inverter. Frigorias: 2967. Calorias: 3165. Potencia en W: 3450. Control
                     Remoto. Display. Timer. Funcion Sleep.</p>
@@ -77,7 +114,7 @@
                 <button class="boton">COMPRAR</button>
             </article>
             <article class="productos-box">
-                <img src="../assets/tienda_Burlete_Portada.jpg" width="300px" alt="Foto Burletes">
+                <img src="../assets/tienda_Burlete_Portada.jpg" width="280px" alt="Foto Burletes">
                 <h2>BURLETES PARA VENTANAS AUTOADHESIVOS</h2>
                 <p>Colocar en puertas, ventanas y demás aberturas donde se requiera la absorción de golpes y evitar el
                     paso de agua, corrientes de aire, polvo y ruidos.</p>
@@ -86,7 +123,7 @@
                 <button class="boton">COMPRAR</button>
             </article>
             <article class="productos-box">
-                <img src="../assets/tienda_Candados_Portada.jpg" width="300px" alt="Foto Candados">
+                <img src="../assets/tienda_Candados_Portada.jpg" width="280px" alt="Foto Candados">
                 <h2>CANDADO BULIT DE ALEACIÓN ALUMINIO COMBINACIÓN</h2>
                 <p>Forma del candado: cuadrado. Tipo de apertura: combinación numérica. Materiales: metal. Medidas:
                     7.5cm de alto x 40mm de ancho.Colores rojo y verde</p>
@@ -97,7 +134,7 @@
         </section>
         <section class="section-2">
             <article class="productos-box">
-                <img src="../assets/tienda_AireAcondicionado_Portada.jpg" width="300px" alt="Foto Aire acondicionado">
+                <img src="../assets/tienda_Fresadora_Portada.jpg" width="280px" alt="Foto Aire acondicionado">
                 <h2>AIRE ACONDICIONADO SPLIT INVERTER SURREY</h2>
                 <p>Aire Acondicionado Split Inverter. Frigorias: 2967. Calorias: 3165. Potencia en W: 3450. Control
                     Remoto. Display. Timer. Funcion Sleep.</p>
@@ -106,7 +143,7 @@
                 <button class="boton">COMPRAR</button>
             </article>
             <article class="productos-box">
-                <img src="../assets/tienda_Burlete_Portada.jpg" width="300px" alt="Foto Burletes">
+                <img src="../assets/tienda_Hidrolavadora_Portada.jpg" width="280px" alt="Foto Burletes">
                 <h2>BURLETES PARA VENTANAS AUTOADHESIVOS</h2>
                 <p>Colocar en puertas, ventanas y demás aberturas donde se requiera la absorción de golpes y evitar el
                     paso de agua, corrientes de aire, polvo y ruidos.</p>
@@ -115,7 +152,7 @@
                 <button class="boton">COMPRAR</button>
             </article>
             <article class="productos-box">
-                <img src="../assets/tienda_Candados_Portada.jpg" width="300px" alt="Foto Candados">
+                <img src="../assets/tienda_Taladro_Portada.jpg" width="280px" alt="Foto Candados">
                 <h2>CANDADO BULIT DE ALEACIÓN ALUMINIO COMBINACIÓN</h2>
                 <p>Forma del candado: cuadrado. Tipo de apertura: combinación numérica. Materiales: metal. Medidas:
                     7.5cm de alto x 40mm de ancho.Colores rojo y verde</p>
@@ -144,17 +181,23 @@
             </div>
             <div class="footer__2">
                 <div class="footer__box">
-                    <img src="../assets/rrss_ig.png" alt="">
+                    <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="../assets/rrss_ig.png"
+                            alt="Instagram"></a>
                 </div>
                 <div class="footer__box">
-                    <img src="../assets/rrss_ln.png" alt="">
+                    <a href="https://www.linkedin.com/feed/" target="_blank"><img src="../assets/rrss_ln.png"
+                            alt="Linkedin"></a>
                 </div>
                 <div class="footer__box">
-                    <img src="../assets/rrss_yt.png" alt="">
+                    <a href="https://www.youtube.com/" target="_blank"><img src="../assets/rrss_yt.png"
+                            alt="YouTube"></a>
                 </div>
             </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

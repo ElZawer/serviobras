@@ -38,3 +38,15 @@
         transform: scale(110%);
     }
 }
+
+.boton--secundario {
+    @extend .boton;
+    background-color: map-get($colores, color-secundario);
+    color: map-get($colores, color-blanco);
+    border: 1px solid map-get($colores, color-secundario);
+    margin: 0 0 0 20px;
+    &:hover {
+        border: 1px solid map-get($colores, color-terciario);
+        transform: scale(110%);
+    }
+}

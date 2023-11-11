@@ -23,40 +23,71 @@
 </head>
 
 <body>
-    <header class="header">
-        <!--Logo-->
-        <a class="img-size" href="../index.html" target="_self"><img src="../assets/so_white.svg" width="250px"
-                alt="Logo Serviobras"></a>
-
-        <!--Menu-->
-        <ul>
-            <li><a href="../index.html" target="_self">Inicio</a></li>
-            <li><a href="./nosotros.html" target="_self">Nosotros</a></li>
-            <li><a href="./novedades.html" target="_self">Novedades</a></li>
-            <li><a href="./tienda.html" target="_self">Tienda</a></li>
-            <li><a href="./contacto.html" target="_self">Contacto</a></li>
-        </ul>
-    </header>
-    <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <a href="./tienda.html" target="_self"><img src="../assets/header1.jpg" class="d-block w-100"
-                        alt="Foto Slider uno"></a>
-            </div>
-            <div class="carousel-item">
-                <a href="./tienda.html" target="_self"><img src="../assets/header2.jpg" class="d-block w-100"
-                        alt="Foto Slider dos"></a>
-            </div>
-            <div class="carousel-item">
-                <a href="./tienda.html" target="_self"><img src="../assets/header3.jpg" class="d-block w-100"
-                        alt="Foto Slider tres"></a>
+    <nav class="navbar navbar-dark fixed-top navbar-customize">
+        <div class="container-fluid navbar-customize">
+            <a class="navbar-brand" href="../index.html" target="_self">
+                <img class="logo" src="../assets/so_white.svg" alt="Logo Serviobras">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">¿Qué estás buscando?</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body navbar-customize">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a href="../index.html" aria-current="page" target="_self">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../pages/nosotros.html" target="_self">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../pages/novedades.html" target="_self">Novedades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../pages/tienda.html" target="_self">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../pages/contacto.html" target="_self">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                        <button type="submit" class="boton--secundario">Buscar</button>
+                    </form>
+                </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    </nav>
+    <div id="carouselExampleInterval" class="carousel slide slider-customize" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <a href="../pages/tienda.html" target="_self"><img src="../assets/header1.jpg" class="d-block w-100"
+                        alt="Foto slider uno"></a>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <a href="../pages/tienda.html" target="_self"><img src="../assets/header2.jpg" class="d-block w-100"
+                        alt="Foto slider dos"></a>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <a href="../pages/tienda.html" target="_self"><img src="../assets/header3.jpg" class="d-block w-100"
+                        alt="Foto slider tres"></a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
@@ -105,9 +136,8 @@
                         quedando atrás y va dando paso a nuevas REALIDADES ARQUITECTÓNICAS. Su instrumento más tangible
                         son
                         las casas sustentables, una solución eficaz, eficiente y práctica.</p>
-                    <iframe width="420" height="240"
-                        src="https://www.youtube.com/embed/KCTTlakZjYI?si=nG9FCyxgKPZTK2yT" title="YouTube video player"
-                        frameborder="0"
+                    <iframe width="420" height="240" src="https://www.youtube.com/embed/KCTTlakZjYI?si=nG9FCyxgKPZTK2yT"
+                        title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
                     <p>Pero, para que las casas sustentables puedan ser llevadas del plano a la realidad, los
@@ -139,32 +169,26 @@
     </main>
 
     <!--Footer-->
-    <footer>
-        <div class="footer__0">
-            <div class="footer__1">
-                <div>
-                    <div class="footer__logo">
-                        <img src="../assets/so_white.svg" width="200px">
-                    </div>
-                </div>
-            </div>
-            <div class="footer__2">
-                <div class="footer__box">
-                    <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="../assets/rrss_ig.png"
-                            alt="Instagram"></a>
-                </div>
-                <div class="footer__box">
-                    <a href="https://www.linkedin.com/feed/" target="_blank"><img src="../assets/rrss_ln.png"
-                            alt="Linkedin"></a>
-                </div>
-                <div class="footer__box">
-                    <a href="https://www.youtube.com/" target="_blank"><img src="../assets/rrss_yt.png"
-                            alt="YouTube"></a>
+    <footer class="footer__tienda">
+        <div class="footer__1">
+            <div>
+                <div class="footer__logo">
+                    <img src="../assets/so_white.svg" width="200px">
                 </div>
             </div>
         </div>
-        <div class="footer__caja2">
-            <p>Derechos reservados 2023</p>
+        <div class="footer__2">
+            <div class="footer__box">
+                <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="../assets/rrss_ig.png"
+                        alt="Instagram"></a>
+            </div>
+            <div class="footer__box">
+                <a href="https://www.linkedin.com/feed/" target="_blank"><img src="../assets/rrss_ln.png"
+                        alt="Linkedin"></a>
+            </div>
+            <div class="footer__box">
+                <a href="https://www.youtube.com/" target="_blank"><img src="../assets/rrss_yt.png" alt="YouTube"></a>
+            </div>
         </div>
     </footer>
     <script> src = "./scripts/bootstrap.bundle.min"</script>

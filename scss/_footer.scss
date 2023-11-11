@@ -7,9 +7,10 @@
     background-color: $color-secundario;
     width: auto;
     height: 150px;
-    padding: 0 50px 0 50px;
+    padding: 0 0 0 50px;
     grid-area: footer__tienda;
 }
+
 .footer__0 {
     display: flex;
     flex-wrap: wrap;
@@ -19,7 +20,7 @@
     background-color: $color-secundario;
     width: auto;
     height: 150px;
-    padding: 0 50px 0 50px;
+    padding: 0 20px 0 20px;
 }
 
 .footer__1 {
@@ -36,7 +37,8 @@
 
 .footer__logo {
     width: auto;
-    
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -45,6 +47,7 @@
     justify-content: center;
     background-color: $color-negro;
     height: 40px;
+
     p {
         color: $color-blanco;
         margin: 0;
@@ -55,5 +58,95 @@
 }
 
 .footer__box {
-    width: 100px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+
+    .footer__tienda {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-secundario;
+        height: 150px;
+        padding: 0 0 0 0;
+        grid-area: footer__tienda;
+    }
+    
+    .footer__0 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-primario;
+
+    }
+
+    .footer__1 {
+        width: auto;
+    }
+
+    .footer__2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        margin-top: 30px;
+    }
+    .footer__box {
+        width: 60px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 576px) {
+
+    .footer__tienda {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-secundario;
+        height: 150px;
+        padding: 0 0 0 0;
+        grid-area: footer__tienda;
+    }
+    
+    .footer__0 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-secundario;
+
+    }
+
+    .footer__1 {
+        width: auto;
+    }
+
+    .footer__2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        margin-top: 30px;
+    }
+    .footer__box {
+        width: 60px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }

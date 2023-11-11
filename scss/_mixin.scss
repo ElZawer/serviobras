@@ -10,11 +10,11 @@ margin: $margin;
 }
 
 .home__novedades--titulo {
-    @include textos(Oswald, 700, $color-primario, $color-blanco, 52px, center, 58px, 50px 0 50px 0)
+    @include textos(Oswald, 700, $color-primario, $color-blanco, 52px, center, 58px, 50px 50px 50px 50px)
 }
 
 .home__secciones--titulo {
-    @include textos(Oswald, 700, $color-primario, $color-blanco, 62px, center, 66px, 70px 0 50px 0)
+    @include textos(Oswald, 700, $color-primario, $color-blanco, 62px, center, 66px, 70px 50px 50px 50px)
 }
 
 .footer__parrafo {

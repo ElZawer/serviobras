@@ -4,14 +4,20 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     width: auto;
+
     .home__secciones--botones {
+        display: flex;
+        flex-direction: column;
         height: auto;
-        width: 457px;
+        width: 360px;
         border-radius: 5px;
         text-align: center;
-        margin: 20px;
-        padding: 20px 20px 50px 20px;
+        justify-content: center;
+        align-items: center;
+        margin: 40px;
+
         transition: all 1s;
 
         &:hover {
@@ -20,7 +26,13 @@
     }
 
     .home__secciones--flecha {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         padding: 0px 20px 50px 20px;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
     }
 
     .home__secciones--foto {
@@ -95,6 +107,7 @@
     align-items: center;
     width: auto;
     margin: 0px 0px 50px 0px;
+
     .home__novedades--cards {
         display: flex;
         flex-direction: row;
@@ -102,12 +115,13 @@
         justify-content: center;
         align-items: center;
         height: auto;
-        width: 457px;
+        width: 397px;
         border-radius: 5px;
         display: inline;
         margin: 20px;
         padding: 20px;
         box-shadow: 0px 0px 15px #bebebe;
+
         a {
             font-size: 16px;
         }
@@ -148,5 +162,58 @@
         &:hover {
             scale: 110%;
         }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+    .home__secciones--titulo {
+        font-size: 42px;
+        line-height: 44px;
+    }
+
+    .home__secciones--botones {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        border-radius: 5px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s;
+        margin: 0;
+
+        &:hover {
+            scale: 110%;
+        }
+    }
+
+    .home__novedades--cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 273px;
+        border-radius: 5px;
+        display: inline;
+        margin: 20px;
+        padding: 20px;
+        box-shadow: 0px 0px 15px #bebebe;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 576px) {
+    .home__secciones--titulo {
+        font-size: 48px;
+        line-height: 52px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .home__secciones--titulo {
+        font-size: 56px;
+        line-height: 62px;
     }
 }
